@@ -9,11 +9,11 @@ Quantité : 5
 Taux de TVA : 0.2
 Le montant de la facture à régler est de : 59.94 */
 
-$quantité = 5;
+$quantite = 5;
 $tva = 0.2;
 $PUHT = 9.99;
 
-$prixTTC = 5*9.99*(1+0.2);
+$prixTTC = $quantite*$PUHT*(1+$tva);
 echo $prixTTC
 
 

@@ -2,6 +2,7 @@
 <h2>Ecrire un algorithme permettant de savoir si une phrase est palindrome</h2>
 <?php
 $phrase = str_replace(" ", "","engage le jeu que je le gagne");
+$phrase = strtolower($phrase);
 $reverse = strrev($phrase);
 
  if($phrase == $reverse){                                        //// vérification de la condition palindrome

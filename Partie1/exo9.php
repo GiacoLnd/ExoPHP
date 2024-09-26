@@ -5,16 +5,22 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n'est pas le cas, « non 
 
 
 <?php
-$male = false;
-$age = 14; 
+$sexe = false;
+$age = 20; 
 
-if ($male == true && $age >= 20) {
-    echo "vous êtes un homme de $age ans imposable !";
-} else if ($male == false && $age >= 18 && $age <= 35) {
-    echo "vous êtes une femme de $age ans imposable";
+if ($sexe == true && $age >= 20) {
+    echo "vous êtes un homme de $age ans imposable !<br>";
+} else if ($sexe == false && $age >= 18 && $age <= 35) {
+    echo "vous êtes une femme de $age ans imposable<br>";
 } else {
-    echo "vous n'êtes pas imposable";
+    echo "vous n'êtes pas imposable<br>";
 }
 
-
+$homme ="un homme";
+$femme = "une femme";
+if ($homme && $age >=20 or $femme && $age >= 18 && $age <= 35){
+    echo "Vous êtes imposable";
+} else {
+    echo "Vous n'êtes pas imposable";
+}
 ?>

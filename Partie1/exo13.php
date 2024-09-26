@@ -8,7 +8,8 @@ $notes = [10, 12, 8, 19, 3, 16, 11, 13, 9];
 $nbNotes = count( $notes);
 $sommesNotes = array_sum($notes);
 $moyenne = round($sommesNotes / $nbNotes, 2);
-echo "Sa moyenne est de : $moyenne";
+echo "Notes : ".implode(", ", $notes);
+echo "<br>Sa moyenne est de : $moyenne";
 
 
 

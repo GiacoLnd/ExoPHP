@@ -8,27 +8,23 @@
     CADET A PARTIR DE 11 ANS
     SI CAT. PAS GEREE, PRECISER
 */
-$age = 12.5;
+$age = 8;
 settype($age, "integer");
 
 if ($age >= 18) {
         echo "l'enfant est trop âgé !";
 }   else if ($age >= 11) {
         $result = "cadet";
-            echo "l'enfant qui a $age ans est $result";
 }   else if ($age >= 10) {
         $result = "minime";
-            echo "l'enfant qui a $age ans est $result";
 }   else if($age >= 8){
         $result = "pupille";
-            echo "l'enfant qui a $age ans est $result";
 }   else if ($age >= 6){
         $result = "poussin";
-            echo "l'enfant qui a $age ans est $result";
-}        
-    else {
+}   else {
         echo "l'enfant est trop jeune !";
 }
+echo "L'enfant est $result.";
 
 
 
